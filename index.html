@@ -5,8 +5,6 @@
     <link href="reset.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script> 
         $(function(){
@@ -14,7 +12,6 @@
         });
     </script>
     
-    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
     
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-
   scalable=yes">
@@ -219,11 +216,7 @@
   
 <script>
     
-        var country = geoplugin_city();
-        
-        console.log(country);
-    
-    
+
         var slideIndex = 1;
         showSlides(slideIndex);
         changeOnTimer();
@@ -285,4 +278,12 @@
         }
     
 </script>
+    
+<?php
+    $a = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']));
+    $countrycode= $a['geoplugin_countryCode'];
+    if ($countrycode=='GB')
+        header( 'Location: error.html' );
+
+?>
     
