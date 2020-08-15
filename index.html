@@ -39,7 +39,7 @@
     <div id="nav"></div>
   <div class="hero-text">
     <h1>Nikhil Kamat</h1>
-    <form action="#about">
+    <form action="geop.html">
         <input class="button" type="submit" value="About">
       </form>
   </div>
@@ -278,12 +278,4 @@
         }
     
 </script>
-    
-<?php
-    $a = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']));
-    $countrycode= $a['geoplugin_countryCode'];
-    if ($countrycode=='GB')
-        header( 'Location: error.html' );
-
-?>
     
