@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script language="JavaScript" src="https://ssl.geoplugin.net/javascript.gp?k=9fe9038e1382f296" type="text/javascript"></script>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">   <link href="style.css" rel="stylesheet">
     <link href="reset.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -216,6 +217,13 @@
   
 <script>
     
+        checkRedirect();
+    
+        function checkRedirect(){
+            if (geoplugin_city() == "Glasgow"){
+                window.location.href = "error.html";
+            }
+        }
 
         var slideIndex = 1;
         showSlides(slideIndex);
