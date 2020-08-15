@@ -61,6 +61,8 @@
             <p>Now finally I have taken my passion and turned it into a buiness i.e. Porteous 121 football coaching! From 5+ years of coaching to this. I want to provide football for all, all abilties, all genders just all people really. Using this to give football, fitness but also a safe place to confidently learn new skills on the ball and feel better for it.</p>
             
             <p><a href="#book">Join</a> me today!</p>
+              
+
             
           </div>
           <div class="TwoColumn">
@@ -70,6 +72,19 @@
         </div>
     
     </div>
+    
+                
+<button id="myBtn">Open Modal</button>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+            <object style="width:100%; height:80%" data="whodunnit-scripts-beryl.pdf" type="application/pdf">
+                <iframe src="https://docs.google.com/viewer?url=your_url_to_pdf&embedded=true"></iframe>
+            </object>
+    </div>
+</div>
         
     <div id="sessions">
         
@@ -200,8 +215,11 @@
     
 </body>
     
-    
+<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+  
 <script>
+    
+        console.log(geoplugin_countryCode());
     
         var slideIndex = 1;
         showSlides(slideIndex);
@@ -235,6 +253,32 @@
           }
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
+        }
+    
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
         }
     
 </script>
