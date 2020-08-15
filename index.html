@@ -11,7 +11,10 @@
         $(function(){
           $("#nav").load("topNav.html"); 
         });
-    </script> 
+    </script>
+    
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+
     
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-
   scalable=yes">
@@ -44,6 +47,10 @@
       </form>
   </div>
 </div>
+    
+    <script language="Javascript"> 
+	   document.write("Welcome to our visitors from "+geoplugin_city()+", "+geoplugin_countryName()); 
+    </script>
     
     <div id="about">
         <div style="text-align: center">
@@ -215,11 +222,10 @@
     
 </body>
     
-<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
   
 <script>
     
-        console.log(geoplugin_countryCode());
+        
     
         var slideIndex = 1;
         showSlides(slideIndex);
