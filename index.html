@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">   <link href="style.css" rel="stylesheet">
     <link href="reset.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script> 
@@ -14,7 +15,6 @@
     </script>
     
     <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-
   scalable=yes">
@@ -48,9 +48,6 @@
   </div>
 </div>
     
-    <script language="Javascript"> 
-	   document.write("Welcome to our visitors from "+geoplugin_city()+", "+geoplugin_countryName()); 
-    </script>
     
     <div id="about">
         <div style="text-align: center">
@@ -202,7 +199,7 @@
         
         
         
- 
+       
 
         
         
@@ -214,7 +211,9 @@
 
     
 
-
+    <script language="Javascript"> 
+	   document.write("Welcome to our visitors from "+geoplugin_city()+", "+geoplugin_countryName()); 
+    </script>
 
     
     
