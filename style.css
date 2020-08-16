@@ -88,7 +88,7 @@ body, html {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/kakudmi-JO19K0HDDXI-unsplash.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("img/hero.jpg");
 
   /* Set a specific height */
   height: 100%;
@@ -104,7 +104,7 @@ body, html {
 .hero-text {
   text-align: center;
   position: absolute;
-  top:38%;
+  top:60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -139,8 +139,8 @@ body, html {
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
-  width: 32%;
-  padding: 5px;
+  width: 33.33%;
+  padding: 10px;
 }
 
 /* Clear floats after image containers */
@@ -226,10 +226,10 @@ body, html {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 25px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: -30px;
   width: 100%;
   text-align: center;
 }
@@ -248,7 +248,7 @@ body, html {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 10px 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -385,4 +385,47 @@ div.formContainer {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.rowCard {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.rowCard ,
+.rowCard  > .columnCard  {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.columnCard  {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.rowCard ::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.contentCard  {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .columnCard  {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnCard  {
+    width: 100%;
+  }
 }
