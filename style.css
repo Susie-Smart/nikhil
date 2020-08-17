@@ -3,6 +3,13 @@ body{
     color:white;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -25px;
+    visibility: hidden;
+}
+
 
 /* Add a black background color to the top navigation */
 .topnav {
