@@ -1,9 +1,65 @@
-        <div class="slideshow-container">
+<!DOCTYPE html>
+<html>
+<head>
+    <script language="JavaScript" src="https://ssl.geoplugin.net/javascript.gp?k=9fe9038e1382f296" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">   <link href="style.css" rel="stylesheet">
+    <link href="reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+        $(function(){
+          $("#nav").load("topNav.html"); 
+        });
+    </script>
+    
+    
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-
+  scalable=yes">
+
+    <style>
+        body{
+            background-color: #778ca3;
+        }
+        h1{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 40px;
+        }
+    
+    
+    </style>
+    
+    <title>Sound of Music</title>
+    
+</head>
+
+<body>
+    
+<div id="nav"></div>
+    
+    
+        <div style="margin-top: 10%">
+    
+            <div style="text-align: center">
+                <h1 style="margin-top: 40px;">Sound Of Music</h1>
+            </div>
+    
+            <iframe style="display:block; margin-left: auto; margin-right: auto; width: 50%; height:400px" src="https://www.youtube.com/embed/1GgE2uqj_DY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+
+        </div>
+
+
+  
+    <div class="slideshow-container" style="margin-top: 5%">
 
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
             <div class="numbertext">1 / 3 Hamilton Poster</div>
-            <img src="img/hamilton.jpg" style="width:100%">
+            <img src="img/hamilton.png" style=" max-height: 500px">
             <div class="text">Graphically re-created the Schyluer Sisters’ Hamilton Poster using complex equations. Explain the reasoning and method behind the use of each equation. <button id="myBtn3" Style="margin-left: 10px; width:100px">View Journal</button>
                 <!-- The Modal -->
                 <div id="myModal3" class="modal">
@@ -41,3 +97,66 @@
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
         </div>
+    
+</body>
+
+    
+    <script>
+    
+        //checkRedirect();
+    
+        function checkRedirect(){
+            if (geoplugin_countryCode() == "IN"){
+                window.location.href = "error.html";
+            }
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        //changeOnTimer();
+
+        function changeOnTimer(){
+            slideIndex++;
+            showSlides(slideIndex);
+            setTimeout(changeOnTimer, 5000);
+        }
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
