@@ -111,7 +111,7 @@ body, html {
 .hero-text {
   text-align: center;
   position: absolute;
-  top:60%;
+  top:90%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -455,7 +455,7 @@ div.formContainer {
 
 .photobanner {
 	height: 285px;
-	width: 5650px;
+	width: 11650px;
   animation-play-state: running;
   animation: bannermove 30s linear infinite;
   display: inline-block;
