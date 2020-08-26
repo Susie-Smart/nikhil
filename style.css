@@ -372,6 +372,14 @@ div.formContainer {
      text-decoration:underline;
 }
 
+.somPress{
+    text-align: center
+}
+
+.somPress button{
+    margin: 10px;
+    width:210px;
+}
 
 /* The Modal (background) */
 .modal {

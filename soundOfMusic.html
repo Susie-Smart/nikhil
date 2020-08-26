@@ -40,20 +40,35 @@
 <div id="nav"></div>
     
     
+
+    
         <div style="margin-top: 10%">
     
             <div style="text-align: center">
                 <h1 style="margin-top: 40px;">Sound Of Music</h1>
             </div>
+            
+            
+        <div class="row">
+          <div class="TwoColumn">
+              <iframe width="650" height="350" style="max-width:100%" src="https://www.youtube.com/embed/cdlhGydz9ms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="TwoColumn">
+              <iframe width="650" height="350" style="max-width:100%" src="https://www.youtube.com/embed/1GgE2uqj_DY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+            
     
-            <iframe class="som" src="https://www.youtube.com/embed/cdlhGydz9ms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     
 
         </div>
 
-
-        <button id="myBtn" Style="margin-left: 10px; width:100px">Afternoon DC, 20th April 2018</button>
+<div class = "somPress">
+            <div style="text-align: center">
+                <h2 style="margin-top: 40px;">Sound Of Music Press</h2>
+            </div>
+        <button id="myBtn" Style="margin-left: 10px;">Afternoon DC, 20th April 2018</button>
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
                     <!-- Modal content -->
@@ -65,7 +80,8 @@
     
         </div>
     
-        <button id="myBtn2" Style="margin-left: 10px; width:100px">View Journal</button>
+    
+        <button id="myBtn2" Style="margin-left: 10px;">Free Press Journal, 15th April 2018</button>
                 <!-- The Modal -->
                 <div id="myModal2" class="modal">
                     <!-- Modal content -->
@@ -73,14 +89,62 @@
                         <span class="close">&times;</span>
                             <img src="img/sompress2.jpeg">
                     </div>
+                </div>
+    
+        <button id="myBtn3" Style="margin-left: 10px;">Parsi Times, 14th April 2018</button>
+                <!-- The Modal -->
+                <div id="myModal3" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                            <img src="img/sompress3.jpg">
+                    </div>
+                </div>
+    
+        <button id="myBtn4" Style="margin-left: 10px;">Mumbai Mirror, 21st February 2018</button>
+                <!-- The Modal -->
+                <div id="myModal4" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                            <img src="img/sompress4.jpeg">
+                    </div>
+                </div>
+    
+            <button id="myBtn5" Style="margin-left: 10px;">Afternoon DC, 21st February 2018</button>
+                <!-- The Modal -->
+                <div id="myModal5" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                            <img src="img/sompress5.jpg">
+                    </div>
+                </div>
     
     
-        </div>
+            <button id="myBtn6" Style="margin-left: 10px;">Times of India, 20th February 2018</button>
+                <!-- The Modal -->
+                <div id="myModal6" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                            <img src="img/sompress6.jpg">
+                    </div>
+                </div>
+    
+            <button id="myBtn7" Style="margin-left: 10px;">Sunday Midday, 18th February 2018</button>
+                <!-- The Modal -->
+                <div id="myModal7" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                            <img src="img/sompress7.jpg">
+                    </div>
+                </div>
     
     
     
-    
-    
+    </div>
     
     
     
@@ -153,7 +217,143 @@
             modal2.style.display = "none";
           }
         }
+        
+        
+                // Get the modal
+        var modal3 = document.getElementById("myModal3");
 
+        // Get the button that opens the modal
+        var btn3 = document.getElementById("myBtn3");
+    
+        // Get the <span> element that closes the modal
+        var span3 = document.getElementsByClassName("close")[2];
+
+        // When the user clicks the button, open the modal 
+        btn3.onclick = function() {
+          modal3.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span3.onclick = function() {
+          modal3.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal3) {
+            modal3.style.display = "none";
+          }
+        }
+        
+        
+                // Get the modal
+        var modal4 = document.getElementById("myModal4");
+
+        // Get the button that opens the modal
+        var btn4 = document.getElementById("myBtn4");
+    
+        // Get the <span> element that closes the modal
+        var span4 = document.getElementsByClassName("close")[3];
+
+        // When the user clicks the button, open the modal 
+        btn4.onclick = function() {
+          modal4.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span4.onclick = function() {
+          modal4.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal4) {
+            modal4.style.display = "none";
+          }
+        }
+        
+        
+        
+                // Get the modal
+        var modal5 = document.getElementById("myModal5");
+
+        // Get the button that opens the modal
+        var btn5 = document.getElementById("myBtn5");
+    
+        // Get the <span> element that closes the modal
+        var span5 = document.getElementsByClassName("close")[4];
+
+        // When the user clicks the button, open the modal 
+        btn5.onclick = function() {
+          modal5.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span5.onclick = function() {
+          modal5.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal5) {
+            modal5.style.display = "none";
+          }
+        }
+
+        
+        
+                // Get the modal
+        var modal6 = document.getElementById("myModal6");
+
+        // Get the button that opens the modal
+        var btn6 = document.getElementById("myBtn6");
+    
+        // Get the <span> element that closes the modal
+        var span6 = document.getElementsByClassName("close")[5];
+
+        // When the user clicks the button, open the modal 
+        btn6.onclick = function() {
+          modal6.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span6.onclick = function() {
+          modal6.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal6) {
+            modal6.style.display = "none";
+          }
+        }
+        
+        
+                        // Get the modal
+        var modal7 = document.getElementById("myModal7");
+
+        // Get the button that opens the modal
+        var btn7 = document.getElementById("myBtn7");
+    
+        // Get the <span> element that closes the modal
+        var span7 = document.getElementsByClassName("close")[6];
+
+        // When the user clicks the button, open the modal 
+        btn7.onclick = function() {
+          modal7.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span7.onclick = function() {
+          modal7.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal7) {
+            modal7.style.display = "none";
+          }
+        }
         
     </script>
 
