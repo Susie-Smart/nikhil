@@ -53,50 +53,41 @@
         </div>
 
 
-  
-    <div class="slideshow-container" style="margin-top: 5%">
-
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 3 Hamilton Poster</div>
-            <img src="img/hamilton.png" style=" width:100%; max-height: 500px">
-            <div class="text">Graphically re-created the Schyluer Sisters’ Hamilton Poster using complex equations. Explain the reasoning and method behind the use of each equation. <button id="myBtn3" Style="margin-left: 10px; width:100px">View Journal</button>
+        <button id="myBtn" Style="margin-left: 10px; width:100px">Afternoon DC, 20th April 2018</button>
                 <!-- The Modal -->
-                <div id="myModal3" class="modal">
+                <div id="myModal" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
                         <span class="close">&times;</span>
-                            <object style="width:100%; height:80%" data="Nikhil's Masterpiece Journal (1).pdf" type="application/pdf">
-                                <iframe src="https://docs.google.com/viewer?url=https://drive.google.com/file/d/1i02KK7Qrj_8GEA8IfxIQKNu13ULfVzJt/view?usp=sharing&embedded=true"></iframe>
-                            </object>
+                            <img src="img/sompress1.jpg">
                     </div>
-                </div> </div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 3 Rube Goldberg Machine</div>
-            <iframe style="width:100%; height:500px; max-width:100%" src="https://www.youtube.com/embed/FdPdOaZmOjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="text"> Built a Rube Goldberg Machine of Musical Instruments using The Geometer's Sketchpad. The process involved parametric equations, kinematic equations, and time functions to replicate the Domino Effect. </div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3 Open Broadway Data</div>
-            <img src="img/data.jpg" style="width:100%">
-            <div class="text">Currently working with Data Scientist in New York City to build a FrontEnd of all the data to exist on Broadway. In collaboration with Director, Producer, and Choreographer Warren Adams, data will be used to solve Broadway diversity issues.</div>
-          </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    
         </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center; padding-bottom: 20px">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
+    
+        <button id="myBtn2" Style="margin-left: 10px; width:100px">View Journal</button>
+                <!-- The Modal -->
+                <div id="myModal2" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                            <img src="img/sompress2.jpeg">
+                    </div>
+    
+    
         </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+
     
 </body>
 
@@ -110,40 +101,59 @@
                 window.location.href = "error.html";
             }
         }
+        
+                // Get the modal
+        var modal = document.getElementById("myModal");
 
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        //changeOnTimer();
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
 
-        function changeOnTimer(){
-            slideIndex++;
-            showSlides(slideIndex);
-            setTimeout(changeOnTimer, 5000);
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
         }
 
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
         }
 
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
           }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
         }
+        
+        // Get the modal
+        var modal2 = document.getElementById("myModal2");
+
+        // Get the button that opens the modal
+        var btn2 = document.getElementById("myBtn2");
+    
+        // Get the <span> element that closes the modal
+        var span2 = document.getElementsByClassName("close")[1];
+
+        // When the user clicks the button, open the modal 
+        btn2.onclick = function() {
+          modal2.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span2.onclick = function() {
+          modal2.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal2) {
+            modal2.style.display = "none";
+          }
+        }
+
         
     </script>
 
