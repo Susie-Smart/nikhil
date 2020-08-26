@@ -1,6 +1,6 @@
 body{
     font-family: 'PT Sans Narrow', sans-serif;
-    color:white;
+    color:black;
 }
 
 a.anchor {
@@ -13,7 +13,7 @@ a.anchor {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #4b6584;
+  background-color: #f1f2f6;
   overflow: hidden;
   position: fixed;
   top:0;
@@ -26,7 +26,7 @@ a.anchor {
 .topnav a {
   float: left;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 16px 16px;
   text-decoration: none;
@@ -95,7 +95,7 @@ body, html {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("img/hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("img/hero.jpg");
 
   /* Set a specific height */
   height: 100%;
@@ -111,7 +111,7 @@ body, html {
 .hero-text {
   text-align: center;
   position: absolute;
-  top:90%;
+  top:95%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -361,6 +361,18 @@ div.formContainer {
     }
 }
 
+#myBtn5{
+     cursor:pointer;
+     color:blue;
+     text-decoration:underline;
+}
+#myBtn4{
+     cursor:pointer;
+     color:blue;
+     text-decoration:underline;
+}
+
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -462,7 +474,7 @@ div.formContainer {
 
 .photobanner {
 	height: 285px;
-	width: 11650px;
+	width: 12960px;
   animation-play-state: running;
   animation: bannermove 30s linear infinite;
   display: inline-block;
