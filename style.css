@@ -14,7 +14,7 @@ a.anchor {
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #f1f2f6;
-  overflow: hidden;
+  overflow: auto;
   position: fixed;
   top:0;
   width:100%;
