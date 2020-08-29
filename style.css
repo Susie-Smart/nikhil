@@ -93,7 +93,7 @@ body, html {
 }
 
 #backgroundimage {
-background-image: url("image3.png");
+background-image: url("img/hero.jpg");
 width: 100vw;
 height: 100vh; 
 background-size: 100% 100%;
