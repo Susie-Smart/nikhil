@@ -105,17 +105,17 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  top: 10px;
+  top: 55px;
 }
 
 /* Place text in the middle of the image */
 .hero-text {
   text-align: center;
   position: absolute;
-  top:95%;
-  left: 50%;
+  top:80%;
+  left: 52.5%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: black;
 
 }
 
