@@ -524,7 +524,7 @@ div.formContainer {
 
 .photobanner {
 	height: 285px;
-	width: 12960px;
+	width: 14256px;
   animation-play-state: running;
   animation: bannermove 30s linear infinite;
   display: inline-block;
