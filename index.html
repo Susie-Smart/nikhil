@@ -37,8 +37,10 @@
 
 <body>
     
+<div id="nav"></div>
         
 <div class="hero-image">
+    <div id="nav"></div>
   <div class="hero-text">
     <h1>Nikhil Kamat</h1>
     <!--
@@ -49,14 +51,10 @@
   </div>
 </div>
     
-    <div id="nav"></div>
-    
     
     <br>
     <br>
     
-<div class = "mainConent">
-      
     <div>
         <a class="anchor" id="about"></a>
         <div style="text-align: center">
@@ -396,27 +394,13 @@
 </div>
 
     
- </div>     
+    
 
     
 </body>
     
   
 <script>
-    
-        window.onscroll = function() {myFunction()};
-
-        var header = document.getElementById("nav");
-        var sticky = header.offsetTop;
-
-        function myFunction() {
-            console.log(pageYOffset)
-          if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-          } else {
-            header.classList.remove("sticky");
-          }
-        }
     
         //checkRedirect();
     
