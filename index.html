@@ -39,7 +39,6 @@
     
         
 <div class="hero-image">
-    <div id="nav"></div>
   <div class="hero-text">
     <h1>Nikhil Kamat</h1>
     <!--
@@ -411,6 +410,7 @@
         var sticky = header.offsetTop;
 
         function myFunction() {
+            console.log(pageYOffset)
           if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
           } else {
