@@ -3,6 +3,16 @@ body{
     color:black;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .mainContent {
+  padding-top: 102px;
+}
+
 a.anchor {
     display: block;
     position: relative;
@@ -15,8 +25,8 @@ a.anchor {
 .topnav {
   background-color: #f1f2f6;
   overflow: auto;
-  position: fixed;
-  top:0;
+/*  position: fixed;
+  top:0; */
   width:100%;
     max-width: 100%;
   z-index: 9998;

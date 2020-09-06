@@ -37,7 +37,6 @@
 
 <body>
     
-<div id="nav"></div>
         
 <div class="hero-image">
     <div id="nav"></div>
@@ -51,10 +50,14 @@
   </div>
 </div>
     
+    <div id="nav"></div>
+    
     
     <br>
     <br>
     
+<div class = "mainConent">
+      
     <div>
         <a class="anchor" id="about"></a>
         <div style="text-align: center">
@@ -74,10 +77,6 @@
               <br>
               <p>
                   Growing up, I have always been passionate about two fields – Performing Arts and STEM. It might sound strange, but I have always been intrigued by the natural harmony between these two ‘opposing’ disciplines. Isn’t the most beautiful music governed by logic? Doesn’t mathematics evolve through creativity?  So, as a child, I danced to the Water Cycle Song, and created theatrical monologues about conducting electricity. Weird, I know!
-              </p>
-              <br>
-              <p>
-                  Throughout my short career I have appeared in several productions, however, some of my most recent performances include, Friedrich von Trapp in the National Center of Performing Arts’ production of the Sound of Music and Bobby Strong in my High School production of Urinetown.     
               </p>
               <br>
               <p>
@@ -374,7 +373,7 @@
           </div>
           <div class="TwoColumn">
               <iframe height="300" style="max-width:100%" src="https://www.youtube.com/embed/taXJ-v5N2SM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p>Leading and teaching virtual maths content to young girls from Avasara Academy (a school which develops the leadership potential of bright young women.</p>  
+              <p>Leading and teaching virtual math content to young girls from Avasara Academy (a school which develops the leadership potential of bright young women.)</p>  
           </div>
         </div>
         
@@ -386,7 +385,7 @@
 
         
     <div id="contact" style="text-align: center; font-size: 30px; margin-top: 10px; margin-bottom: 10px">
-        <h3> Contact: nikhil.kamat@icloud.com </h3>
+        <h3> Contact: <a href="mailto:nikhil.kamat@icloud.com"> nikhil.kamat@icloud.com </a> </h3>
         
     </div>
         
@@ -398,13 +397,26 @@
 </div>
 
     
-    
+ </div>     
 
     
 </body>
     
   
 <script>
+    
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("nav");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
     
         //checkRedirect();
     
