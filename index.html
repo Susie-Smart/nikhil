@@ -37,7 +37,7 @@
 
 <body>
     
-<div id="nav"></div>
+
         
 <div class="hero-image">
   <div class="hero-text">
@@ -50,6 +50,7 @@
   </div>
 </div>
     
+    <div id="nav"></div>
     
     <br>
     <br>
@@ -407,6 +408,19 @@
             if (geoplugin_countryCode() == "IN"){
                 window.location.href = "error.html";
             }
+        }
+    
+        window.onscroll = function() {stickyHeader()};
+
+        var header = document.getElementById("myTopnav");
+        var sticky = header.offsetTop;
+
+        function stickyHeader() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
         }
 
        
