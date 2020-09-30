@@ -37,7 +37,13 @@
 
 <body>
     
-
+<div id="myModal0" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+            <input id="pass" type="password">
+            <button type="submit" onclick="checkPass(document.getElementById('pass').value)">Submit</button>
+    </div>
+</div>
         
 <div class="hero-image">
   <div class="hero-text">
@@ -411,6 +417,20 @@
   
 <script>
     
+        var passModal = document.getElementById("myModal0");
+    
+        weakPass();
+    
+        function weakPass(){
+            passModal.style.display = "block";
+        }
+    
+        function checkPass(p){
+            if (p === "dracula"){
+                passModal.style.display = "none";
+            } 
+        }
+    
         //checkRedirect();
     
         function checkRedirect(){
@@ -431,6 +451,8 @@
             header.classList.remove("sticky");
           }
         }
+    
+        
 
        
         // Get the modal
