@@ -503,10 +503,11 @@
 //            } 
 //        }
     
-        //checkRedirect();
+        checkRedirect();
     
         function checkRedirect(){
             if (geoplugin_countryCode() == "IN"){
+                console.log(geoplugin_countryCode())
                 window.location.href = "error.html";
             }
         }
