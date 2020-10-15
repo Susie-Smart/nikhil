@@ -46,9 +46,8 @@
 </head>
 
 <body>
-    
+<!--   
 <div id="myModal0" class="modal">
-    <!-- Modal content -->
     <div class="modal-content" style="text-align: center">
             <p>Please enter the password</p>
             <input id="pass" type="password">
@@ -56,6 +55,7 @@
             <button type="submit" onclick="checkPass(document.getElementById('pass').value)">Submit</button>
     </div>
 </div>
+-->
         
 <div class="hero-image">
   <div class="hero-text">
@@ -507,6 +507,7 @@
     
         function checkRedirect(){
             if (geoplugin_countryCode() == "IN"){
+                console.log("test")
                 console.log(geoplugin_countryCode())
                 window.location.href = "error.html";
             }
