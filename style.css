@@ -10,6 +10,17 @@ a.anchor {
     visibility: hidden;
 }
 
+.showOnMobile{
+    display:none;
+}
+@media screen and (max-width: 800px) {
+   .showNormal{
+        display:none;
+    }
+    .showOnMobile{
+        display: block;
+    }
+}
 
 /* Add a black background color to the top navigation */
 .topnav {
